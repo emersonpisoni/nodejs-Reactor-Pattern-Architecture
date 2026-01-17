@@ -18,6 +18,10 @@ JS is, but NodeJS uses libuv to delegate to other threads
 
 ### What is blocking/non blocking I/O?
 
+- Blocking I/O: Application will make a function call and pause its execution at a point until the data is received. It is called as ‘Synchronous’.
+
+- Non-Blocking I/O: Application will make a function call, and, without waiting for the results it continues its execution. It is called as ‘Asynchronous’.
+
 ### What is event-driven?
 
 ### What is Event Demultiplexer?
