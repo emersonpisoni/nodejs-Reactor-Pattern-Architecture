@@ -22,9 +22,15 @@ JS is, but NodeJS uses libuv to delegate to other threads
 
 - Non-Blocking I/O: Application will make a function call, and, without waiting for the results it continues its execution. It is called as ‘Asynchronous’.
 
-### What is event-driven?
-
 ### What is Event Demultiplexer?
+
+It is provided by OS and pushes the new events into the Event Queue when a set of I/O operations is finished.
+
+- Linux: epoll
+- macOS: kqueue
+- Windows: IOCP
+
+---
 
 ![](reactor-pattern.webp)
 
