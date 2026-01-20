@@ -30,6 +30,14 @@ It is provided by OS and pushes the new events into the Event Queue when a set o
 - macOS: kqueue
 - Windows: IOCP
 
+### What is Event Loop?
+
+An infinite loop that repeatedly performs these steps:
+
+- Wait for events
+- Move ready events to internal queues
+- Execute the corresponding handlers
+
 ---
 
 ![](reactor-pattern.webp)
